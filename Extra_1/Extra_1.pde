@@ -42,5 +42,5 @@ ellipse(469, 507, 92, 458);
     String filename = "output";
     save(filename + ".png");
     print("canvas saved as " + filename + ".png");
-}
+  }
 }
