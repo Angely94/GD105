@@ -1,19 +1,21 @@
 void setup() {
- size(1000, 1000);
+ size(800, 800);
 
 }
 
 
 void draw() {
-  background(255, 168, 0);
+  background(247, 243, 237);
+  fill(255, 168, 0);
+  square(64, 152, 849);
 fill(255, 102, 0);
-rect(74, 115, 833, 679);
+square(74, 115, 833);
 
 fill(235, 88, 8);
-rect(160, 243, 663, 503);
+square(160, 243, 663);
 
 fill(240, 55, 6);
-rect(257, 342, 473, 359);
+square(400, 400, 473);
 
   // this saves the canvas on the first frame
   // so we can get a clean image of the output easily
