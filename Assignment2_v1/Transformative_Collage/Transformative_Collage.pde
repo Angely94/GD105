@@ -17,10 +17,10 @@ void draw() {
  image(thoughtBubble, 4, -33);
  
  textFont(times);
- textSize(180);
+ textSize(132);
  frameRate(5);
- fill(255, 0, 0);
- text("The seeb gods have ", 751, 432);
- text("answered my prayers!", 829, 566);
+ fill(123, 26, 26);
+ text("The seeb gods have ", 667, 432);
+ text("answered my prayers!", 624, 566);
 
 }
