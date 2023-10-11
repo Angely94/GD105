@@ -1,3 +1,5 @@
+//Inspo link https://sasj.tumblr.com/post/656544818625986560/geometric-shapes-210712
+
 void setup() {
  size(700, 700);
 
