@@ -68,7 +68,7 @@ void draw(){
  text(topText, topTextAnchor.x, topTextAnchor.y);
  fill(0);
  textSize(74);
- text(bottomText, bottomTextAnchor.x--2, bottomTextAnchor.y-1);
+ text(bottomText, bottomTextAnchor.x-2, bottomTextAnchor.y-1);
  text(bottomText, bottomTextAnchor.x+3, bottomTextAnchor.y-1);
  text(bottomText, bottomTextAnchor.x+7, bottomTextAnchor.y+-2);
  textSize(74);
