@@ -61,18 +61,25 @@ void draw(){
  textAlign(CENTER,CENTER);
  stroke(5, 5 ,5);
  textSize(91);
- text(topText, topTextAnchor.x-6, topTextAnchor.y-2);
- text(topText, topTextAnchor.x+0, topTextAnchor.y-5);
- text(topText, topTextAnchor.x+5, topTextAnchor.y+5);
+ text(topText, topTextAnchor.x-1, topTextAnchor.y-2);
+ text(topText, topTextAnchor.x+-1, topTextAnchor.y-4);
+ text(topText, topTextAnchor.x+-1, topTextAnchor.y+3);
  fill(252, 252, 252);
  text(topText, topTextAnchor.x, topTextAnchor.y);
  fill(0);
  textSize(74);
- text(bottomText, bottomTextAnchor.x-2, bottomTextAnchor.y-1);
- text(bottomText, bottomTextAnchor.x+3, bottomTextAnchor.y-1);
- text(bottomText, bottomTextAnchor.x+7, bottomTextAnchor.y+-2);
+ text(bottomText, bottomTextAnchor.x-3, bottomTextAnchor.y-0);
+ text(bottomText, bottomTextAnchor.x+-5, bottomTextAnchor.y-1);
+ text(bottomText, bottomTextAnchor.x+-3, bottomTextAnchor.y+-2);
  textSize(74);
  fill(252, 252, 252);
  text(bottomText, bottomTextAnchor.x, bottomTextAnchor.y);
- 
+
+  // this saves the canvas on the first frame
+  // so we can get a clean image of the output easily
+  if(frameCount == 1) {
+    String filename = "output";
+    save(filename + ".png");
+    print("canvas saved as " + filename + ".png");
+  }
 }

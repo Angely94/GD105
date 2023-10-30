@@ -1,3 +1,4 @@
+//link https://www.si.edu/object/homage-square-glow%3Ahmsg_72.3
 void setup() {
  size(800, 800);
 
