@@ -1,6 +1,10 @@
+// Credit for inspo is The Coding Train on youtube
+// Link to the video I used for help
+// https://www.youtube.com/watch?v=nBKwCCtWlUg
+
 int totalFrames = 200;
 int counter = 0;
-boolean record = true;
+boolean record = false;
 float circleY = 50;
 
 void setup(){
