@@ -29,6 +29,7 @@ void draw() {
     circle(i * 9, i * 9, 60);
     rotate(TAU/25 + frameCount * 0.0007);
   }
+  //dark purple lines in the center
   for (float i = 0; i <= 5; i += 1) {
     stroke(75, 26, 55);
     translate(0, 0);
