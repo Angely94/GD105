@@ -1,6 +1,6 @@
 // Credit goes to The dot is black on youtube
 // link to the video I used for this code
-// https://www.youtube.com/watch?v=nBKwCCtWlUg
+// https://www.youtube.com/watch?v=ehT7d9JPulQ
 
 float x = 300;
 float y = 300;
