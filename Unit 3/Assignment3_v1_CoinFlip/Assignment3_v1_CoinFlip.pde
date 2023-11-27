@@ -16,7 +16,8 @@ void setup() {
 
   // 50% chance
   a = random(1) < 0.50;
-  //a = false;
+  
+  
   //you either take the highway tunnel or a scenic road
   if (a) {
     image(tunnel, 0, 0);
