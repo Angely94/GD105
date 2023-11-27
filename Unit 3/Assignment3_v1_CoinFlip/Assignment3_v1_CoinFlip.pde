@@ -1,4 +1,4 @@
-boolean a, b;
+boolean a;
 
 PImage tunnel, scenicR, rain, sun, person, car;
 
