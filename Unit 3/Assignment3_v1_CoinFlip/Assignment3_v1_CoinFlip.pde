@@ -1,4 +1,4 @@
-boolean a;
+boolean a,b,c;
 
 PImage tunnel, scenicR, rain, sun, person, car;
 
@@ -16,6 +16,8 @@ void setup() {
 
   // 50% chance
   a = random(1) < 0.50;
+  b = random(1) < 0.50;
+  c = random(1) < 0.50;
   
   
   //you either take the highway tunnel or a scenic road
@@ -25,13 +27,13 @@ void setup() {
     image(scenicR, 0, 0);
   }
   //are you walking or taking a car
-  if (a) {
+  if (b) {
     image(car, 300, 300);
   } else {
     image(person, 300, 300);
   }
   //is it raining or sunny
-  if (a) {
+  if (c) {
     image(sun, 0, 0);
   } else {
     image(rain, 0, 0);

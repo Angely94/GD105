@@ -9,6 +9,7 @@ void setup() {
 
 void draw() {
   background(73);
+  //border color
   fill(61);
   noStroke();
 
@@ -16,7 +17,7 @@ void draw() {
   float gridStep = 0.04;
 
 
-  //outer square
+  //inner square
   square(width/2, height/2, width*.80);
 
   //adding looping triangles and transformations
