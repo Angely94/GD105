@@ -67,4 +67,13 @@ void draw(){
  text("I",585,496);
  text("R",581,532);
  text("D",575,564);
+ 
+ 
+ 
+  if(frameCount == 1) {
+    String filename = "output";
+    save(filename + ".png");
+    print("canvas saved as " + filename + ".png");
+  }
+  
 }
