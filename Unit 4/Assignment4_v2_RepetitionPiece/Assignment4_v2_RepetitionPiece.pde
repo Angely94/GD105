@@ -7,8 +7,6 @@ void setup() {
 
   //initializing variables
   pg = createGraphics(200, 200);
-  pgWidth = 100;
-  pgHeight = 100;
 }
 
 void draw() {
@@ -32,8 +30,8 @@ void draw() {
       image(pg, x, y);
     }
   }
-  
-    if (frameCount == 1) {
+
+  if (frameCount == 1) {
     String filename = "output";
     save(filename + ".png");
     print("canvas saved as " + filename + ".png");
