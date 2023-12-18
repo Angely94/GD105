@@ -2,7 +2,7 @@
 PImage background, cover, pigeon, pipe;
 
 //declaring my integers for the game and the arrays for the pipes
-int game, score, highscore, x, y, vert, wallX[] = new int[2], wallY[] = new int[2];
+int game, score, highscore,bgx, x, y, bgy, vert, wallX[] = new int[2], wallY[] = new int[2];
 
 
 
@@ -20,25 +20,27 @@ void setup() {
   game = 1;
   score = 0;
   highscore = 0;
-  x = -200;
+  x = -300;
   vert = 0;
 
   //text size and color for the score
   fill(0, 0, 0);
   textSize(20);
+  bgx = bgx -1;
 }
 
 void draw() {
   //adding the ability for the pigeon to fall top to bottom, pipes moving in from left to right randomly,
   //collision, and score/highscore
+  
   if (game == 0) {
     imageMode(CORNER);
-    image(background, x, 0);
-    image(background, x+background.width, 0);
+    image(background, bgx, bgy);
+    image(background, bgx + background.width, bgy);
     x -= 3;
     vert += 1;
     y += vert;
-    if (x== -1800) x = 0;
+    if (x== -2000) x = 0;
     for (int i = 0; i<2; i++) {
       imageMode(CENTER);
       image(pipe, wallX[i], wallY[i] - (pipe.height/2+100));
